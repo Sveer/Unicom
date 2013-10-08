@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <widget
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:gap="http://phonegap.com/ns/1.0"
@@ -6,15 +6,14 @@
     versionCode="100"
     version="0.1.0.0">
    
-    <name>Tip Calculator</name>
+    <name>Unicom delivery</name>
 
     <description>
-        Fast and convenient way to calculate tips for a check.
-        Inputting the sum from a check, you get the total tips due, as well as the totals and tips per person.
+        Статус доставки грузов компанией Unicom Cargo
     </description>
 
-    <author href="http://www.devexpress.com">
-        Developer Express Inc.
+    <author href="http://pryaniky.com">
+        Pryaniky.com
     </author>
 
     <preference name="phonegap-version" value="2.9.0" />
