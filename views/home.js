@@ -11,7 +11,7 @@ UnicomStatus.home = function(params) {
     function checkStatus() {
         status('');
 		hasStatus(false);
-		
+		loading(true);
 		$.ajax({
 		 crossDomain: true,
 		 contentType: "application/json; charset=utf-8",
@@ -20,9 +20,11 @@ UnicomStatus.home = function(params) {
 		  dataType:'jsonp'
 		//  method:'POST'
 		}).done(function(dta) {
+			loading(false);
 		  hasStatus(true);
 		  status(dta.status);
 		}).fail(function(){
+			loading(false);
 			hasStatus(true);
 		  status('Нет соединения с Интернет.');
 		});
