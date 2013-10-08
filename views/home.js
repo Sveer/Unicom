@@ -30,14 +30,14 @@ UnicomStatus.home = function(params) {
 		});
 
 
-    }
+    };
 
 
     return {
         billTotal: billTotal,
         hasStatus: hasStatus,
         status: status,
-		loading:loading
+		loading:loading,
 
         checkStatus: checkStatus
     };

@@ -3,7 +3,7 @@
 window.UnicomStatus = {};
 
 $(function() {
-//DevExpress.devices.current('iPhone');
+    DevExpress.devices.current('iPhone');
     document.addEventListener("deviceready", function() { navigator.splashscreen.hide(); });
 
     UnicomStatus.app = new DevExpress.framework.html.HtmlApplication({
