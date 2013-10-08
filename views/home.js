@@ -5,7 +5,7 @@ UnicomStatus.home = function(params) {
 
     var billTotal = ko.observable();
 
-   
+    var loading = ko.observable(false);
 	var hasStatus = ko.observable(false);
 	var status = ko.observable('');
     function checkStatus() {
@@ -35,6 +35,7 @@ UnicomStatus.home = function(params) {
         billTotal: billTotal,
         hasStatus: hasStatus,
         status: status,
+		loading:loading
 
         checkStatus: checkStatus
     };
